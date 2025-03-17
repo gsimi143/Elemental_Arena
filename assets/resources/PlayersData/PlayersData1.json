@@ -1,0 +1,44 @@
+{
+    "players": [
+        {
+            "name": "Hinata",
+            "type": "Player",
+            "health": 100,
+            "attackPower": 20,
+            "movementRange": 1,
+            "element": "Fire",
+            "specialAbility": "Shield",
+            "cooldown":2
+        },
+        {
+            "name": "Naruto",
+            "type": "Player",
+            "health": 100,
+            "attackPower": 35,
+            "movementRange": 2,
+            "element": "Water",
+            "specialAbility": "Burst",
+            "cooldown":2
+        },
+        {
+            "name": "Sasuke",
+            "type": "Enemy",
+            "health": 100,
+            "attackPower": 25,
+            "movementRange": 1,
+            "element": "Earth",
+            "specialAbility": "Burst",
+            "cooldown":2
+        },
+        {
+            "name": "Sakura",
+            "type": "Enemy",
+            "health": 100,
+            "attackPower": 22,
+            "movementRange": 1,
+            "element": "Fire",
+            "specialAbility": "Heal",
+            "cooldown":2
+        }
+    ]
+}
