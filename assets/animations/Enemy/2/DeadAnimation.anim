@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.AnimationClip",
-    "_name": "Enemy2_DeadAnimation",
+    "_name": "DeadAnimation",
     "_objFlags": 0,
     "__editorExtras__": {
       "embeddedPlayerGroups": []

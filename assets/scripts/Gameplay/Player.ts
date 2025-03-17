@@ -282,11 +282,9 @@ export class Player extends Component {
             console.error("UITransform component is missing!");
             return;
         }
-        let originalWidth = uiTransform.width;
         let originalHeight = uiTransform.height;
-        let scaleX = cellSize / originalWidth * 0.8;
-        let scaleY = cellSize / originalHeight * 0.8;
-        this.node.setScale(new Vec3(scaleX, scaleY, 1));
+        let scaleY = (cellSize / originalHeight) * 0.8;
+        this.node.setScale(new Vec3(scaleY, scaleY, 1));
     }
 
     updateAnimation(clipName) {

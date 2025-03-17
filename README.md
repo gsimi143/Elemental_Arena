@@ -53,7 +53,7 @@ This game relies on **Cocos Creator** as the main game engine. You will need Coc
 ### Controls
 
 - **Mouse/Touch**:
-  - Click on highlighted to move a character to an adjacent tile.
+  - Click on highlighted tile/cell to move a character to an adjacent tile.
   - Click on attack button to attack the enemies within range.
   - Use the special ability button to activate a character's special power.
 
@@ -74,7 +74,7 @@ This game relies on **Cocos Creator** as the main game engine. You will need Coc
 - The game alternates turns between the player and the AI.
 - On each turn, a character can:
   - **Move** – Move up to their movement range.
-  - **Attack** – Attack an adjacent enemy.
+  - **Attack** – Attack an enemy in given range of area on grid.
   - **Use Special Ability** – Use a unique ability if it is off cooldown.
 
 ### **Elemental System**
@@ -86,14 +86,14 @@ This game relies on **Cocos Creator** as the main game engine. You will need Coc
 
 ### **Special Abilities**
 Each character has a unique special ability:
-- **Burst**: Deals damage to all enemies in a in given range of area.
-- **Heal**: Heals himself.
-- **Shield**: Provides a defense boost for 2 turns.
+- **Burst**: Deals damage to all enemies in a given range of area.
+- **Heal**: Heals himself with the power of 30HP.
+- **Shield**: Provides a defense boost for given turns (based on cooldown) by reducing the attack power of attacker to half of its amount of attack power.
 
 
 ## AI System
 
-The AI in this game uses basic decision-making logic to determine its actions. The AI evaluates its health, the presence of enemies, and whether its special ability is available. The AI uses a simple decision-making process based on the following rules:
+The AI in this game uses basic decision-making logic to determine its actions. The AI evaluates its health, the presence of opponents, and whether its special ability is available. The AI uses a simple decision-making process based on the following rules:
 1. **Health Threshold**: If the AI's health is low, it may attempt to heal itself.
 2. **Attack Priority**: The AI will prioritize attacking when there are opponents within range.
 3. **Movement**: The AI will move randomly if no immediate threats or actions are present.
@@ -105,7 +105,7 @@ The AI in this game uses basic decision-making logic to determine its actions. T
 
 The **Gameplay** scene is responsible for:
 - Loading game resources.
-- After the loading showing playground and enable user to play the game
+- After the loading, showing playground and enable user to play the game
 
 
 ### Game Flow
